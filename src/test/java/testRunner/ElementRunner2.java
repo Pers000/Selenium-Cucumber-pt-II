@@ -5,17 +5,14 @@ import cucumber.api.SnippetType;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions (
-	features = {"src/test/java/features/Elements.feature"},
+	features = {"src/test/java/features/Elements2.feature"},
 	snippets = SnippetType.CAMELCASE,
-	dryRun = !true,
 	monochrome = false,
 	glue = {"steps", "hooks"},
-	plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-	tags = "@pilottest"
-	
+	plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 	//Below is the cucumber default report
 //	plugin = {"pretty", "html:CucumberReports",
 //			"json:reports/results.json",
 //			"junit:reports/results.json"}
 )
-public class ElementRunner extends AbstractTestNGCucumberTests{}
+public class ElementRunner2 extends AbstractTestNGCucumberTests{}

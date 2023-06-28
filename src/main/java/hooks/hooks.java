@@ -60,8 +60,8 @@ public class hooks {
 	@BeforeStep
 	public void beforeStep(Scenario scenario) {
 		// Incase you want to take screenshots every steps add this
-		//byte[] screenshotAs = context.getDriver().getScreenshotAs(OutputType.BYTES);
-		//scenario.embed(screenshotAs, "image/png");
+		byte[] screenshotAs = context.getDriver().getScreenshotAs(OutputType.BYTES);
+		scenario.embed(screenshotAs, "image/png");
 	}
 
 	@AfterStep
